@@ -1,95 +1,183 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Header } from "./components"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.main}>
+      <header>
+        <Header />
+        <div className="hero">
+          <div className="left-hero">
+            <div>
+              <div>Freelance Developer</div>
+              <h1>Talk is cheap. <br /> Show me the code</h1>
+              <p>I design and code high quality UI/UX, <br />
+                high efficient server, <br />
+                and i like what i do.
+              </p>
+              LET'S CHAT!
+              </div>
+            <div>
+              <div> <span>6</span><span>YEARS <br /> EXPERIENCE</span> </div>
+              <div> <span>36</span><span>PROJECTS COMPLETED <br /> WITHIN RANGE</span> </div>
+            </div>
+          </div>
+          <div className="right-hero">
+            <img src="" alt="" />
+          </div>
+          <div></div>
         </div>
-      </div>
+        <div className="main">
+          <section>
+            <div className="services">
+              <div className="service-card">
+                <div><span>Design</span> <span>icon</span></div>
+                <p>making responsive designs</p>
+                <div>read more</div>
+              </div>
+              <div className="service-card">
+                <div><span>Design</span> <span>icon</span></div>
+                <p>making responsive designs</p>
+                <div>read more</div>
+              </div>
+              <div className="service-card">
+                <div><span>Design</span> <span>icon</span></div>
+                <p>making responsive designs</p>
+                <div>read more</div>
+              </div>
+            </div>
+            <div className="techs">
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div className="about-me">
+              <span>more about me</span>
+              <h3>Hello! I'm Arman <br /> Grema</h3>
+              <h5>Every great product begin with an even better story </h5>
+              <p>
+                Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+                Velit nulla adipisci ipsum ratione
+                quisquam cupiditate dolore suscipit
+                obcaecati enim quia unde consequatur
+                eaque provident ducimus neque,
+                nemo veniam ad aliquam.
+            </p>
+            </div>
+          </section>
+          <section className="works">
+            <div className="works-sec-a">
+              <div>
+                <h3>Latest Works</h3>
+                <span>Perfect solutions for real world problems</span>
+              </div>
+              <div>
+                <div className="work-card">
+                  <div>
+                    <div className="work-name">Lorem</div>
+                    <div className="stacks">
+                      <span>react</span>
+                      <span>next</span>
+                    </div>
+                  </div>
+                  <div className="work-main">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="">ALL PROJECTS </a></h5>
+                <p>See some other works that are not live on my github profile. <a href="">here</a></p>
+              </div>
+            </div>
+            <div className="works-sec-b">
+              <div className="work-card">
+                <div>
+                  <div className="work-name">Lorem</div>
+                  <div className="stacks">
+                    <span>react</span>
+                    <span>next</span>
+                  </div>
+                </div>
+                <div className="work-main">
+                  <img src="" alt="" />
+                </div>
+              </div>
+              <div className="work-card">
+                <div>
+                  <div className="work-name">Lorem</div>
+                  <div className="stacks">
+                    <span>react</span>
+                    <span>next</span>
+                  </div>
+                </div>
+                <div className="work-main">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <footer>
+        <div>
+          <div>
+            <h4>Let's make something amazing together</h4>
+            <p>Start by <a href="">saying Hi!</a></p>
+          </div>
+          <div className="logo">
+            <span>Arman</span><span>Grema</span>
+          </div>
+        </div>
+        <div>
+        <div>
+        <span>get to me through</span>
+        <div>
+        <p>23 byepass road, hammadu kafi, Gombe</p>
+        <h4>agrema101@unimaid.endu.ng</h4>
+        </div>
+        <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+        </div>
+        <div className={styles.flexAround}></div>
+        </div>
+      </footer>
+    </div>
   );
 }
