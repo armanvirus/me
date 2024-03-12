@@ -111,51 +111,51 @@ export default function Home() {
           <section className="works">
             <div className="works-sec-a">
               <div>
-                <h3>Latest Works</h3>
+                <h2>Latest Works</h2>
                 <span>Perfect solutions for real world problems</span>
               </div>
               <div>
                 <div className="work-card">
-                  <div>
-                    <div className="work-name">Lorem</div>
+                  <div className="work-card-head">
+                    <h4 className="work-name">Dashboard</h4>
                     <div className="stacks">
                       <span>react</span>
                       <span>next</span>
                     </div>
                   </div>
                   <div className="work-main">
-                    <img src="/public/projects/Analytical dashboard.jpg" alt="" />
+                    <img src="/projects/a.jpg" alt="" />
                   </div>
                 </div>
               </div>
               <div>
-                <h5><a href="">ALL PROJECTS </a></h5>
+                <h3><a href="">ALL PROJECTS </a></h3>
                 <p>See some other works that are not live on my github profile. <a href="">here</a></p>
               </div>
             </div>
             <div className="works-sec-b">
               <div className="work-card">
-                <div>
-                  <div className="work-name">Lorem</div>
+                <div className="work-card-head">
+                  <h4 className="work-name">Lectrocloud</h4>
                   <div className="stacks">
                     <span>react</span>
                     <span>next</span>
                   </div>
                 </div>
                 <div className="work-main">
-                  <img src="/public/projects/Finance Web Design.jpg" alt="" />
+                  <img src="/projects/b.jpg" alt="" />
                 </div>
               </div>
               <div className="work-card">
-                <div>
-                  <div className="work-name">Lorem</div>
+                <div className="work-card-head">
+                  <h4 className="work-name">Vrsdata</h4>
                   <div className="stacks">
                     <span>react</span>
                     <span>next</span>
                   </div>
                 </div>
                 <div className="work-main">
-                  <img src="/public/projects/Sight Banking Website.jpg" alt="" />
+                  <img src="/projects/c.jpg" alt="" />
                 </div>
               </div>
             </div>
