@@ -170,6 +170,54 @@ align-items:center;
   -ms-transform:translateX(100px);
   -o-transform:translateX(100px);
 }
+
+.services{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.about-me{
+  max-width:400px;
+}
+
+.about-me > span{
+  font-size:10px;
+  color:rgb(var(--color-ligh));
+  margin-bottom:20px;
+  display:block;
+  opacity:0.6;
+}
+.about-me > h2{
+  margin: 10px 0 2rem 0;
+}
+
+.about-me > p{
+  margin: 1rem 0;
+  color:rgb(var(--light-color));
+  line-height:1.5;
+  opacity:0.9;
+}
+
+.techs{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  margin: 6rem 0;
+}
+
+.techs > div{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  max-width:500px;
+}
+
+.tech{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

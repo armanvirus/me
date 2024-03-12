@@ -35,6 +35,7 @@ export default function Home() {
         <div className="main">
           <section>
             <div className="services">
+              <div className="cards">
               <div className={styles.card}>
                 <div><span>Design</span> <BrushIcon/></div>
                 <p>making responsive designs</p>
@@ -50,10 +51,10 @@ export default function Home() {
                 <p>making responsive designs</p>
                 <div>read more</div>
               </div>
-            </div>
+              </div>
             <div className="about-me">
               <span>more about me</span>
-              <h3>Hello! I'm Arman <br /> Grema</h3>
+              <h2>Hello! I'm Arman <br /> Grema</h2>
               <h5>Every great product begin with an even better story </h5>
               <p>
                 Lorem ipsum dolor sit
@@ -65,7 +66,9 @@ export default function Home() {
                 nemo veniam ad aliquam.
             </p>
             </div>
+            </div>
             <div className="techs">
+              <div>
               <div className="tech">
                 <span>JS</span>
                 <span>JavaScript</span>
@@ -97,6 +100,11 @@ export default function Home() {
               <div className="tech">
                 <span>JS</span>
                 <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <span>JS</span>
+                <span>JavaScript</span>
+              </div>
               </div>
             </div>
           </section>
