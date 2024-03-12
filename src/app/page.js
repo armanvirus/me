@@ -1,6 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Header } from "./components"
+import ViewQuiltIcon from '@mui/icons-material/ViewQuilt';
+import StorageIcon from '@mui/icons-material/Storage';
+import BrushIcon from '@mui/icons-material/Brush';
 
 export default function Home() {
   return (
@@ -12,40 +15,55 @@ export default function Home() {
             <div>
               <div>Freelance Developer</div>
               <h1>Talk is cheap. <br /> Show me the code</h1>
-              <p>I design and code high quality UI/UX, <br />
+              <p>I design and code high quality UI/UX,
                 high efficient server, <br />
                 and i like what i do.
               </p>
-              LET'S CHAT!
+              <a href="#">LET'S CHAT!</a>
               </div>
             <div>
-              <div> <span>6</span><span>YEARS <br /> EXPERIENCE</span> </div>
-              <div> <span>36</span><span>PROJECTS COMPLETED <br /> WITHIN RANGE</span> </div>
+              <div> <h2>6</h2> <span>YEARS <br /> EXPERIENCE</span> </div>
+              <div> <h2>36</h2> <span>PROJECTS COMPLETED <br /> WITHIN RANGE</span> </div>
             </div>
           </div>
           <div className="right-hero">
-            <img src="" alt="" />
+            <img src="/me.png" alt="" />
           </div>
-          <div></div>
+          {/* <div></div> */}
         </div>
+        </header>
         <div className="main">
           <section>
             <div className="services">
-              <div className="service-card">
-                <div><span>Design</span> <span>icon</span></div>
+              <div className={styles.card}>
+                <div><span>Design</span> <BrushIcon/></div>
                 <p>making responsive designs</p>
                 <div>read more</div>
               </div>
-              <div className="service-card">
-                <div><span>Design</span> <span>icon</span></div>
+              <div className={styles.card}>
+                <div><span>Frontend</span> <ViewQuiltIcon/></div>
                 <p>making responsive designs</p>
                 <div>read more</div>
               </div>
-              <div className="service-card">
-                <div><span>Design</span> <span>icon</span></div>
+              <div className={styles.card}>
+                <div><span>Backend</span> <StorageIcon/></div>
                 <p>making responsive designs</p>
                 <div>read more</div>
               </div>
+            </div>
+            <div className="about-me">
+              <span>more about me</span>
+              <h3>Hello! I'm Arman <br /> Grema</h3>
+              <h5>Every great product begin with an even better story </h5>
+              <p>
+                Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+                Velit nulla adipisci ipsum ratione
+                quisquam cupiditate dolore suscipit
+                obcaecati enim quia unde consequatur
+                eaque provident ducimus neque,
+                nemo veniam ad aliquam.
+            </p>
             </div>
             <div className="techs">
               <div className="tech">
@@ -81,20 +99,6 @@ export default function Home() {
                 <span>JavaScript</span>
               </div>
             </div>
-            <div className="about-me">
-              <span>more about me</span>
-              <h3>Hello! I'm Arman <br /> Grema</h3>
-              <h5>Every great product begin with an even better story </h5>
-              <p>
-                Lorem ipsum dolor sit
-                amet consectetur adipisicing elit.
-                Velit nulla adipisci ipsum ratione
-                quisquam cupiditate dolore suscipit
-                obcaecati enim quia unde consequatur
-                eaque provident ducimus neque,
-                nemo veniam ad aliquam.
-            </p>
-            </div>
           </section>
           <section className="works">
             <div className="works-sec-a">
@@ -112,7 +116,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="work-main">
-                    <img src="" alt="" />
+                    <img src="/public/projects/Analytical dashboard.jpg" alt="" />
                   </div>
                 </div>
               </div>
@@ -131,7 +135,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="work-main">
-                  <img src="" alt="" />
+                  <img src="/public/projects/Finance Web Design.jpg" alt="" />
                 </div>
               </div>
               <div className="work-card">
@@ -143,13 +147,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="work-main">
-                  <img src="" alt="" />
+                  <img src="/public/projects/Sight Banking Website.jpg" alt="" />
                 </div>
               </div>
             </div>
           </section>
         </div>
-      </header>
 
       <footer>
         <div>
