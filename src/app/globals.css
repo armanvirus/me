@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jim+Nightshade&display=swap');
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -94,6 +95,17 @@ a {
 ul{
   list-style-type:none;
 }
+
+.logo{
+  font-size:30px;
+  font-weight:700;
+}
+
+.logo :last-child{
+  opacity:0.8;
+  cpolor:rgb(var(--color-light));
+}
+
 .nav ul{
   display:flex;
   gap:15px;
@@ -174,13 +186,14 @@ align-items:center;
 .services{
   display:grid;
   grid-template-columns:1fr 1fr;
+  padding:6rem 0 0 0;  
 }
 
 .about-me{
   max-width:400px;
 }
 
-.about-me > span{
+.subtitle{
   font-size:10px;
   color:rgb(var(--color-ligh));
   margin-bottom:20px;
@@ -214,9 +227,17 @@ align-items:center;
 }
 
 .tech{
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
   display:flex;
   flex-direction:column;
   align-items:center;
+  opacity:0.7;
+}
+
+.tech :first-child{
+  font-size:30px;
 }
 
 .works{
@@ -281,11 +302,28 @@ align-items:center;
     margin-top:4rem;
     display:flex;
     justify-content:space-between;
-    min-height:250px;
+    min-height:150px;
   }
   
-  footer > div:first-child .logo{
-    margin-top: 2rem;
+  footer > div:first-child{
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+  }
+
+  footer > div:first-child p{
+    margin-top:15px;
+  }
+  footer > div:first-child p a{
+    color:var(--color-touches);
+  }
+  
+  .footer-nav{
+    padding:15px 0;
+  }
+
+  .footer-nav li{
+    padding:2px 0;
   }
 @media (prefers-color-scheme: dark) {
   html {

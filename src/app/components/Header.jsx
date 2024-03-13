@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from "../page.module.css";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import XIcon from '@mui/icons-material/X';
-import GitHubIcon from '@mui/icons-material/GitHub';
+
+import Social from "./Social"
 
 export const Header = () => {
     return (
@@ -18,11 +17,7 @@ export const Header = () => {
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
-            <div className={styles.flexAround}>
-            <a href=""><LinkedInIcon/></a>
-            <a href=""><XIcon/></a>
-            <a href=""><GitHubIcon/></a>
-            </div>
+            <Social/>
         </div>
     )
 }

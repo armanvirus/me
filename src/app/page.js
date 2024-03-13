@@ -1,9 +1,21 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import { Header } from "./components"
 import ViewQuiltIcon from '@mui/icons-material/ViewQuilt';
 import StorageIcon from '@mui/icons-material/Storage';
 import BrushIcon from '@mui/icons-material/Brush';
+import Social from "./components/Social"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faMdb } from '@fortawesome/free-brands-svg-icons';
+import { faGit } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Home() {
   return (
@@ -53,7 +65,7 @@ export default function Home() {
               </div>
               </div>
             <div className="about-me">
-              <span>more about me</span>
+              <span className="subtitle">more about me</span>
               <h2>Hello! I'm Arman <br /> Grema</h2>
               <h5>Every great product begin with an even better story </h5>
               <p>
@@ -70,40 +82,44 @@ export default function Home() {
             <div className="techs">
               <div>
               <div className="tech">
-                <span>JS</span>
+              <FontAwesomeIcon icon={faHtml5} />
+                <span>html</span>
+              </div>
+              <div className="tech">
+              <FontAwesomeIcon icon={faCss3} />
+                <span>css3</span>
+              </div>
+              <div className="tech">
+              <FontAwesomeIcon icon={faBootstrap} />
+                <span>bootstrap</span>
+              </div>
+              <div className="tech">
+              <FontAwesomeIcon icon={faJs} />
                 <span>JavaScript</span>
               </div>
               <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
+              <FontAwesomeIcon icon={faReact} />
+                <span>reactjs</span>
               </div>
               <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
+              <FontAwesomeIcon icon={faCaretUp} />
+                <span>nextjs</span>
               </div>
               <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
+              <FontAwesomeIcon icon={faNodeJs} />
+                <span>nodejs</span>
               </div>
               <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
+              <FontAwesomeIcon icon={faMdb} />
+                <span>mongodb</span>
               </div>
               <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
+              <FontAwesomeIcon icon={faReact} />
+                <span>react native</span>
               </div>
               <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
-              </div>
-              <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
-              </div>
-              <div className="tech">
-                <span>JS</span>
-                <span>JavaScript</span>
+              <FontAwesomeIcon icon={faGit} />
+                <span>version control</span>
               </div>
               </div>
             </div>
@@ -165,28 +181,28 @@ export default function Home() {
       <footer>
         <div>
           <div>
-            <h4>Let's make something amazing together</h4>
+            <h3>Let's make something amazing <br/> together</h3>
             <p>Start by <a href="">saying Hi!</a></p>
           </div>
           <div className="logo">
-            <span>Arman</span><span>Grema</span>
+            <span>Arman</span> <span>Grema</span>
           </div>
         </div>
         <div>
         <div>
-        <span>get to me through</span>
+        <span className="subtitle">reachout to me through</span>
         <div>
         <p>23 byepass road, hammadu kafi, Gombe</p>
         <h4>agrema101@unimaid.endu.ng</h4>
         </div>
-        <ul>
+        <ul className="footer-nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
         </div>
-        <div className={styles.flexAround}></div>
+        <Social/>
         </div>
       </footer>
     </div>
