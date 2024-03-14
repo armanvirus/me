@@ -45,6 +45,10 @@
   transition: background 200ms, border 200ms;
 }
 
+.card > div:first-child :last-child{
+  color:var(--color-touches);
+}
+
 .card span {
   display: inline-block;
   transition: transform 200ms;
@@ -174,10 +178,15 @@
   }
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+@media(max-width:700px){
+  .header{
+    display:none;
+  }
+}
+
+@media(max-width:600px){
+  .main {
+    padding: 3rem 2rem;
   }
 }
 

@@ -99,11 +99,14 @@ ul{
 .logo{
   font-size:30px;
   font-weight:700;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .logo :last-child{
   opacity:0.8;
-  cpolor:rgb(var(--color-light));
+  color:rgb(var(--color-light));
 }
 
 .nav ul{
@@ -111,7 +114,9 @@ ul{
   gap:15px;
   align-items:center;
 }
-
+.mobile-header{
+  display: none;
+}
 .hero{
 display:flex;
 height:90vh;
@@ -187,6 +192,7 @@ align-items:center;
   display:grid;
   grid-template-columns:1fr 1fr;
   padding:6rem 0 0 0;  
+  gap:30px;
 }
 
 .about-me{
@@ -278,20 +284,27 @@ align-items:center;
   -ms-border-radius:5px;
   -o-border-radius:5px;
 }
-.works-sec-a > div:last-child{
+.works-sec-a > div:last-child,
+.works-sec-b > div:last-child{
   display:flex;
   flex-direction:column;
   align-items:center;
 }
-.works-sec-a > div:last-child h3{
+.works-sec-a > div:last-child h3,
+.works-sec-b > div:last-child h3{
   text-decoration: underline;
   color:var(--color-touches);
 }
 
-.works-sec-a > div:last-child p{
+.works-sec-a > div:last-child p,
+.works-sec-b > div:last-child p{
   max-width:300px;
   margin-top:30px;
   
+}
+
+.works-sec-b > div:last-child{
+  display: none;
 }
   .works img{
     max-width:450px;
@@ -324,6 +337,58 @@ align-items:center;
 
   .footer-nav li{
     padding:2px 0;
+  }
+
+  @media(max-width:950px){
+    .hero img{
+      transform:translateX(0);
+    }
+    .works{
+      gap:15px;
+      }
+      .works img{
+        max-width:350px;
+      }
+  }
+
+  @media(max-width:700px){
+    .mobile-header{
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      align-items: center;
+    }
+    .hero{
+      height:unset;
+      flex-direction: column-reverse;
+      }
+      .left-hero{
+        margin:3rem 0;
+      }
+      .services{
+        display:flex;
+        flex-direction: column-reverse;
+        
+      }
+      .works{
+        flex-direction: column;
+      }
+      .works-sec-a > div {
+        padding:0;
+      }
+      .works-sec-a > div:last-child{
+        display:none;
+      }
+.works-sec-b > div:last-child{
+  display: flex;
+  margin-top:2rem;
+      }
+      footer{
+        flex-direction: column;
+      }
+      footer > div:first-child{
+        flex-direction: column-reverse;
+       }
   }
 @media (prefers-color-scheme: dark) {
   html {

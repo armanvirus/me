@@ -174,6 +174,10 @@ export default function Home() {
                   <img src="/projects/c.jpg" alt="" />
                 </div>
               </div>
+              <div>
+                <h3><a href="">ALL PROJECTS </a></h3>
+                <p>See some other works that are not live on my github profile. <a href="">here</a></p>
+              </div>
             </div>
           </section>
         </div>
