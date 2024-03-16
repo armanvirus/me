@@ -66,7 +66,7 @@ export default function Home() {
               </div>
             <div className="about-me">
               <span className="subtitle">more about me</span>
-              <h2>Hello! I'm Arman <br /> Grema</h2>
+              <h2>Hello! I&apos;m Arman <br /> Grema</h2>
               <h5>Every great product begin with an even better story </h5>
               <p>
                 Lorem ipsum dolor sit
@@ -197,7 +197,7 @@ export default function Home() {
         <span className="subtitle">reachout to me through</span>
         <div>
         <p>23 byepass road, hammadu kafi, Gombe</p>
-        <h4>agrema101@unimaid.endu.ng</h4>
+        <h4>agrema101@unimaid.edu.ng</h4>
         </div>
         <ul className="footer-nav">
                     <li><a href="#">Home</a></li>
