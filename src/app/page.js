@@ -31,7 +31,7 @@ export default function Home() {
                 high efficient server, <br />
                 and i like what i do.
               </p>
-              <a href="#">LET'S CHAT!</a>
+              <a href="#">LET&apos;S CHAT!</a>
               </div>
             <div>
               <div> <h2>6</h2> <span>YEARS <br /> EXPERIENCE</span> </div>
@@ -185,7 +185,7 @@ export default function Home() {
       <footer>
         <div>
           <div>
-            <h3>Let's make something amazing <br/> together</h3>
+            <h3>Let&apos;s make something amazing <br/> together</h3>
             <p>Start by <a href="">saying Hi!</a></p>
           </div>
           <div className="logo">
