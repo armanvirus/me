@@ -198,7 +198,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3><a href="">ALL PROJECTS </a></h3>
+              <h3><a href="https://github.com/armanvirus">ALL PROJECTS </a></h3>
               <p>See some other works that are not live on my github profile. <a href="https://github.com/armanvirus">here</a></p>
             </div>
           </div>
