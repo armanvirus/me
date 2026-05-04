@@ -168,8 +168,8 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3><a href="">ALL PROJECTS </a></h3>
-              <p>See some other works that are not live on my github profile. <a href="">here</a></p>
+              <h3><a href="https://github.com/armanvirus/" target="_blank" rel="noopener noreferrer">ALL PROJECTS</a></h3>
+              <p>See some other works that are not live on my github profile. <a href="https://github.com/armanvirus/" target="_blank" rel="noopener noreferrer">here</a></p>
             </div>
           </div>
           <div className="works-sec-b">
@@ -198,8 +198,8 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3><a href="https://github.com/armanvirus">ALL PROJECTS </a></h3>
-              <p>See some other works that are not live on my github profile. <a href="https://github.com/armanvirus">here</a></p>
+              <h3><a href="https://github.com/armanvirus/" target="_blank" rel="noopener noreferrer">ALL PROJECTS</a></h3>
+              <p>See some other works that are not live on my github profile. <a href="https://github.com/armanvirus/" target="_blank" rel="noopener noreferrer">here</a></p>
             </div>
           </div>
         </section>
